@@ -1,0 +1,6 @@
+Tue, 30 Jun 2015 23:01:45 -0500
+README.rdoc	Sun, 28 Jun 2015 20:48:51 -0500
+app/controllers/application_controller.rb	Sun, 28 Jun 2015 20:48:51 -0500
+app/controllers/home_controller.rb	Sun, 28 Jun 2015 21:23:35 -0500
+app/helpers/application_helper.rb	Sun, 28 Jun 2015 20:48:51 -0500
+app/helpers/home_helper.rb	Sun, 28 Jun 2015 21:14:17 -0500
