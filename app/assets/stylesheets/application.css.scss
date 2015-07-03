@@ -41,3 +41,27 @@ nav {
     margin-left: 10px;
   }
 }
+.background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+
+  height: 800px;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+.text {
+  position: fixed;
+  z-index: 9999;
+  width:80%;
+  margin: 0 0 0 -40%;
+  left:50%;
+
+}
