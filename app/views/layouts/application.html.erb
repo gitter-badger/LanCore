@@ -19,7 +19,9 @@
       <li><a href="#">Mobile</a></li>
     </ul>
     <ul class="side-nav" id="mobile">
-      <li><a href="<%= root_path %>" class="center sidenav-header"><img class="responsive-img" src="<%= path_to_image('logo.png') %>"></a></li>
+      <li>
+        <a href="<%= root_path %>" class="center sidenav-header"><img class="responsive-img" src="<%= path_to_image('logo.png') %>"></a>
+      </li>
       <li><a href="#">Sass</a></li>
       <li><a href="#">Components</a></li>
       <li><a href="#">Javascript</a></li>
@@ -28,12 +30,13 @@
   </div>
 </nav>
 <main>
-<%= yield %>
+  <%= yield %>
 </main>
 <footer class="page-footer">
   <div class="footer-copyright">
     <div class="container">
-      Made by <a class="blue-text text-lighten-3" href="http://mishaprasolov.com">Misha Prasolov</a> and <a class="blue-text text-lighten-3" href="http://mishaprasolov.com">Aaron D'Sa</a>
+      Made by <a class="blue-text text-lighten-3" href="http://mishaprasolov.com">Misha Prasolov</a> and
+      <a class="blue-text text-lighten-3" href="https://github.com/amd1250x">Aaron D'Sa</a>
     </div>
   </div>
 </footer>
