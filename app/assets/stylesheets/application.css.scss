@@ -28,19 +28,9 @@
 @import "materialize/components/date_picker/default.date.scss";
 @import "materialize/components/date_picker/default.time.scss";
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-
-.icon-block {
-  padding: 0 15px;
-}
-
-.icon-block .material-icons {
-  font-size: inherit;
-}
-nav {
-  .nav-wrapper {
-    margin-left: 10px;
-  }
-}
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "home";
 
 .sidenav-header {
   height: 95px !important;
@@ -53,28 +43,8 @@ nav {
   margin-top: 10px;
 }
 
-//footer {
-//  margin-bottom: 0;
-//}
-
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
-}
-
-.fill {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  overflow:hidden
-}
-.fill img {
-  flex-shrink:0;
-  min-width:100%;
-  min-height:100%
 }

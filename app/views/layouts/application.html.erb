@@ -32,44 +32,45 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#ba68c8">
   <!-- CSS -->
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <!-- JS -->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <!-- CSRF -->
   <%= csrf_meta_tags %>
 </head>
 <body>
 <nav>
   <div class="nav-wrapper">
-    <a href="#!" class="brand-logo center hide-on-med-and-down"><img class="desktop-navbar-logo" src="<%= path_to_image('logo.png') %>"></a>
-    <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    <ul class="left hide-on-med-and-down">
-      <li><a href="#">Sass</a></li>
-      <li><a href="#">Components</a></li>
-      <li><a href="#">Javascript</a></li>
-      <li><a href="#">Mobile</a></li>
-    </ul>
+    <div class="container">
+      <a href="#!" class="brand-logo center hide-on-med-and-down"><img class="desktop-navbar-logo" src="<%= path_to_image('logo.png') %>"></a>
+      <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
     <ul class="side-nav" id="mobile">
       <li>
         <a href="<%= root_path %>" class="center sidenav-header"><img class="responsive-img" src="<%= path_to_image('logo.png') %>"></a>
       </li>
-      <li><a href="#">Sass</a></li>
-      <li><a href="#">Components</a></li>
-      <li><a href="#">Javascript</a></li>
-      <li><a href="#">Mobile</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">About</a></li>
     </ul>
   </div>
 </nav>
-<main>
-  <%= yield %>
-</main>
-<footer class="page-footer">
+<%= yield %>
+<footer class="page-footer" style="<%= footerhelper(@pagename) %>">
   <div class="footer-copyright">
     <div class="container">
-      Made by <a class="blue-text text-lighten-3" href="http://mishaprasolov.com">Misha Prasolov</a> and
-      <a class="blue-text text-lighten-3" href="http://mishaprasolov.com">Aaron D'Sa</a>
+      <span class="left">Made by <a class="blue-text text-lighten-3" href="http://mishaprasolov.com">Misha Prasolov</a> and
+      <a class="blue-text text-lighten-3" href="https://github.com/amd1250x">Aaron D'Sa</a></span>
+      <span class="right">
+        <a class="white-text" href="https://github.com/LanCoreTeam"><i class="fa fa-github"></i></a>
+        <a class="white-text" href="https://twitter.com/lan_core"><i class="fa fa-twitter"></i></a>
+        <a class="white-text" href="#"><i class="fa fa-envelope"></i></a>
+      </span>
     </div>
   </div>
 </footer>
-<!-- JS -->
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <!-- Google Analytics -->
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -85,9 +86,9 @@
 <script>
     $(document).ready(function () {
         $('.button-collapse').sideNav({
-                    edge: 'left',
-                    closeOnClick: true
-                }
+            edge: 'left',
+            closeOnClick: true
+            }
         );
     });
 </script>
