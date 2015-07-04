@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 846.8 380.6" enable-background="new 0 0 846.8 380.6" xml:space="preserve">
+<g id="Background">
+	<path id="Background_1_" fill="#0091EA" d="M335,380.5H40c-22.1,0-40-16.8-40-37.5V125c0-20.7,17.9-37.5,40-37.5h295
+		c22.1,0,40,16.8,40,37.5v218C375,363.7,357.1,380.5,335,380.5z"/>
+	<ellipse id="Top_Cover" fill="#0091EA" cx="187.5" cy="88" rx="104" ry="88"/>
+</g>
+<g id="Layer_5">
+	<rect id="Center_Base_Gray_Block" x="42" y="204" fill="#9E9E9E" width="291" height="136"/>
+	<rect id="Center_White_Block" x="105.5" y="204" fill="#EEEEEE" width="164" height="60"/>
+	<rect id="Left_Vertical_Bar" x="41.5" y="158" fill="#424242" width="42" height="182"/>
+	<rect id="Right_Vertical_Bar" x="291.5" y="158" fill="#424242" width="42" height="182"/>
+	<rect id="Top_Horizontal_Bar" x="62.5" y="158" fill="#424242" width="250" height="46"/>
+	<rect id="Top_Gray_Bar" x="41.5" y="126" fill="#9E9E9E" width="292" height="32"/>
+	<rect id="Top_Dark_Gray_Tip" x="125" y="67.5" fill="#424242" width="125" height="115"/>
+	<rect id="Top_Gray_Tip" x="146" y="67.5" fill="#9E9E9E" width="83" height="39"/>
+</g>
+<g id="Wires">
+	<rect x="83.5" y="290" fill="#F44336" width="26" height="50"/>
+	<rect x="109.5" y="290" fill="#4CAF50" width="26" height="50"/>
+	<rect x="135.5" y="290" fill="#2979FF" width="26" height="50"/>
+	<rect x="161.5" y="290" fill="#FFEB3B" width="26" height="50"/>
+	<rect x="187.5" y="290" fill="#76FF03" width="26" height="50"/>
+	<rect x="213.5" y="290" fill="#FF9800" width="26" height="50"/>
+	<rect x="239.5" y="290" fill="#00E5FF" width="26" height="50"/>
+	<rect x="265.5" y="290" fill="#FF4081" width="26" height="50"/>
+</g>
+<g id="CORE" display="none">
+	<text transform="matrix(1 0 0 1 397.5833 378.6869)" display="inline" font-family="'Roboto-Bold'" font-size="179.9239">C</text>
+	<text transform="matrix(1 0 0 1 517.4818 378.6869)" display="inline" font-family="'Roboto-Bold'" font-size="179.9239">O</text>
+	<text transform="matrix(0.9721 0 0 1 637.8782 380.6127)" display="inline" font-family="'Roboto-Bold'" font-size="185.0827">R</text>
+	<text transform="matrix(0.9738 0 0 1 749.7366 380.3451)" display="inline" font-family="'Roboto-Bold'" font-size="184.7676">E</text>
+</g>
+<g id="CORE_Path">
+	<g>
+		<path d="M509.4,336.1c-1,13.8-6.1,24.6-15.2,32.5c-9.2,7.9-21.2,11.9-36.2,11.9c-16.4,0-29.3-5.5-38.7-16.6
+			c-9.4-11-14.1-26.2-14.1-45.5v-7.8c0-12.3,2.2-23.1,6.5-32.5c4.3-9.4,10.5-16.6,18.6-21.6c8.1-5,17.4-7.5,28.1-7.5
+			c14.8,0,26.6,4,35.7,11.9c9,7.9,14.2,19,15.6,33.3h-26.4c-0.6-8.3-2.9-14.2-6.9-18c-4-3.7-10-5.6-18.1-5.6
+			c-8.8,0-15.4,3.1-19.7,9.4c-4.4,6.3-6.6,16.1-6.7,29.3v9.7c0,13.8,2.1,23.9,6.3,30.3s10.8,9.6,19.8,9.6c8.1,0,14.2-1.9,18.2-5.6
+			c4-3.7,6.3-9.5,6.9-17.3H509.4z"/>
+	</g>
+	<g>
+		<path d="M634,317.6c0,12.6-2.2,23.6-6.7,33.1s-10.8,16.8-19.1,22c-8.3,5.2-17.8,7.7-28.5,7.7c-10.6,0-20.1-2.5-28.4-7.6
+			c-8.3-5.1-14.8-12.4-19.3-21.8c-4.6-9.5-6.9-20.3-6.9-32.6V312c0-12.6,2.3-23.7,6.8-33.3c4.5-9.6,11-16.9,19.2-22.1
+			c8.3-5.1,17.8-7.7,28.4-7.7c10.7,0,20.1,2.6,28.4,7.7c8.3,5.1,14.7,12.5,19.2,22.1c4.5,9.6,6.8,20.6,6.8,33.2V317.6z M607.3,311.8
+			c0-13.4-2.4-23.6-7.2-30.6c-4.8-7-11.7-10.5-20.6-10.5c-8.8,0-15.7,3.4-20.5,10.3c-4.8,6.9-7.2,17-7.3,30.3v6.2
+			c0,13.1,2.4,23.2,7.2,30.4c4.8,7.2,11.7,10.8,20.7,10.8c8.8,0,15.6-3.5,20.4-10.4s7.1-17.1,7.2-30.4V311.8z"/>
+	</g>
+	<g>
+		<path d="M696.7,332.4h-21v48.2h-26.4V249h47.5c15.1,0,26.8,3.5,35,10.4c8.2,6.9,12.3,16.7,12.3,29.4c0,9-1.9,16.5-5.7,22.5
+			c-3.8,6-9.5,10.8-17.2,14.3l27.7,53.8v1.3h-28.3L696.7,332.4z M675.7,310.5h21.3c6.6,0,11.7-1.7,15.4-5.2
+			c3.6-3.5,5.4-8.2,5.4-14.3c0-6.2-1.7-11.1-5.1-14.6c-3.4-3.6-8.7-5.3-15.8-5.3h-21.2V310.5z"/>
+	</g>
+	<g>
+		<path d="M838.1,323.2h-50.6v35.4h59.4v21.7h-85.7V249h85.6v21.9h-59.2v31.3h50.6V323.2z"/>
+	</g>
+</g>
+<g id="LAN" display="none">
+	<text transform="matrix(1.088 0 0 1 397.6002 227.5)" display="inline" font-family="'Roboto-Light'" font-size="137.0059">LAN</text>
+</g>
+<g id="LAN_Path">
+	<g>
+		<path d="M420,220.5h52.3v7H411v-97.4h9V220.5z"/>
+		<path d="M548.1,200.1H500l-10.9,27.4h-9.4l40.1-97.4h8.5l40.1,97.4h-9.3L548.1,200.1z M502.8,193.2h42.5l-21.3-53L502.8,193.2z"/>
+		<path d="M662.9,227.5h-9L593,144.1v83.4h-9v-97.4h9l61,83.4v-83.4h8.9V227.5z"/>
+	</g>
+</g>
+<g id="Guides" display="none">
+</g>
+</svg>
