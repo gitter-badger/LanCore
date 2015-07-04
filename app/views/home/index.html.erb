@@ -1,19 +1,42 @@
-<!--<div class="section no-pad-bot" id="index-banner">-->
-<div>
-    <div style="background: url(<%= path_to_image('dreamhack2004.jpg') %>) no-repeat center; background-size: 100%; " class="section no-pad-bot background" id="index-banner">
+<div id="image-wrapper" class="valign-wrapper">
+  <div id="homecontent" class="home-headline center white-text">
+    <br>
+
+    <div class="container">
+      <div class="card-panel purple">
+        <a href="<%= root_path %>" class="center hide-on-large-only"><img class="hero-logo" src="<%= path_to_image('logo.png') %>"></a>
+
+        <h1>We can host your LAN party</h1>
+        <i><h2>no matter the size!</h2></i>
+        <br>
+
+        <p class="flow-text">LanCore is a free, open source platform for hosting your LAN party. No sign-ups or logins
+          required, just setup your party, send a link and token to the attendees, and have fun!</p>
+        <br>
+        <a class="waves-effect waves-light btn-large">Start your party!</a>
+        <br><br>
       </div>
-      <div class="container text">
-            <br><br>
-
-            <h1 class="header center orange-text">We can host your LAN party</h1>
-
-            <div class="row center">
-              <h5 class="header col s12 white-text">no matter how big it is</h5>
-            </div>
-            <div class="row center">
-              <a href="#" class="btn-large waves-effect waves-light orange">Get Started</a>
-            </div>
-            <br><br>
-        </div>
-
+    </div>
+  </div>
+  <img class="hide-on-small-only home-img" src="<%= path_to_image('dreamhack2004landscape.jpg') %>">
+  <img class="hide-on-med-and-up home-img" src="<%= path_to_image('dreamhack2004portrait.jpg') %>">
 </div>
+<script>
+    $(document).ready(function () {
+        var $window = $(window);
+        var homeImage = $('#image-wrapper');
+        var navWrapper = $('.nav-wrapper');
+        var footer = $('.page-footer');
+        var content = $('#homecontent');
+
+        function checkWidth() {
+            var viewportHeight = $window.height() - navWrapper.height() - footer.height() - 20;
+            var contentHeight = content.height();
+            if (viewportHeight > contentHeight) homeImage.height(viewportHeight);
+            else homeImage.height(contentHeight);
+        }
+
+        checkWidth();
+        $(window).resize(checkWidth);
+    });
+</script>
