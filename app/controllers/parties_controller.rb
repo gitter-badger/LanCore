@@ -7,6 +7,10 @@ class PartiesController < ApplicationController
     @parties = Party.all
   end
 
+  def makeURL
+    return (0...8).map { (65 + rand(26)).chr }.join
+  end
+
   # GET /parties/1
   # GET /parties/1.json
   def show
@@ -26,7 +30,7 @@ class PartiesController < ApplicationController
   def create
 
     @party = Party.new(party_params)
-
+    @party.URL = makeURL
     respond_to do |format|
       if @party.save && verify_recaptcha(:model => @party, :message => "Oh! It's error with reCAPTCHA!")
         format.html { redirect_to @party, notice: 'Party was successfully created.' }
@@ -36,6 +40,14 @@ class PartiesController < ApplicationController
         format.json { render json: @party.errors, status: :unprocessable_entity }
       end
     end
+    path = "/app/views/parties/" + @party.URL + ".html"
+    content = "this random page works"
+    File.open(path, "w+") do |f|
+      f.write(content)
+    end
+
+
+
   end
 
   # PATCH/PUT /parties/1
