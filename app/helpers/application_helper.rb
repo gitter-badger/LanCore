@@ -1,14 +1,12 @@
 module ApplicationHelper
   def titlehelper(pagename)
-    if pagename === 'Home'
-      return 'LanCore'
-    end
-    return pagename+' - LanCore'
+    return 'LanCore' if pagename === 'Home'
+    return 'LanCore' if pagename === nil
+    pagename+' - LanCore'
   end
+
   def footerhelper(pagename)
-    if pagename === 'Home'
-      return 'margin-top: 0;'
-    end
-    return ''
+    return 'margin-top: 0;' if pagename === 'Home'
+    ''
   end
 end
