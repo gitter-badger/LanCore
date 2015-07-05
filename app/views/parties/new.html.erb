@@ -1,5 +1,22 @@
-<h1>New Party</h1>
+<br>
+<div class="container">
+  <div class="head-title">New Party</div>
+</div>
+
+
 
 <%= render 'form' %>
 
-<%= link_to 'Back', parties_path %>
+<hr>
+<div class="container">
+  <%= link_to 'Back', parties_path %>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15 // Creates a dropdown of 15 years to control year
+        });
+    });
+</script>
+

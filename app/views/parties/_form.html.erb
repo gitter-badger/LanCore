@@ -10,36 +10,31 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :Name %><br>
+<div class="container">
+  <div class="input-field">
+    <%= f.label :Name %>
     <%= f.text_field :Name %>
   </div>
-  <div class="field">
-    <%= f.label :Date %><br>
-    <%= f.text_field :Date %>
+  <div class="input-field">
+    <%= f.label :Date %>
+    <%= f.text_field :Date, class: 'datepicker' %>
   </div>
-  <div class="field">
-    <%= f.label :Location %><br>
+  <div class="input-field">
+    <%= f.label :Location %>
     <%= f.text_field :Location %>
   </div>
-  <div class="field">
-    <%= f.label :Requirements %><br>
-    <%= f.text_field :Requirements %>
-  </div>
-  <div class="field">
-    <%= f.label :Password %><br>
+  <div class="input-field">
+    <%= f.label :Password %>
     <%= f.text_field :Password %>
   </div>
-  <div class="field">
-    <%= f.label :URL %><br>
-    <%= f.text_field :URL %>
-  </div>
-  <div class="field">
-    <%= f.label :Token %><br>
+  <div class="input-field">
+    <%= f.label :Token %>
     <%= f.text_field :Token %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+    <%= f.button :submit => "", class: 'waves-effect waves-light btn' %>
+
+</div>
+
+
 <% end %>

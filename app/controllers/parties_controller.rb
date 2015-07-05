@@ -24,7 +24,9 @@ class PartiesController < ApplicationController
   # POST /parties
   # POST /parties.json
   def create
+
     @party = Party.new(party_params)
+    @party.URL = "x"
 
     respond_to do |format|
       if @party.save
@@ -59,9 +61,8 @@ class PartiesController < ApplicationController
       format.html { redirect_to parties_url, notice: 'Party was successfully destroyed.' }
       format.json { head :no_content }
     end
-  end
 
-  private
+    private
     # Use callbacks to share common setup or constraints between actions.
     def set_party
       @party = Party.find(params[:id])
@@ -71,4 +72,5 @@ class PartiesController < ApplicationController
     def party_params
       params.require(:party).permit(:Name, :Date, :Location, :Requirements, :Password, :URL, :Token)
     end
-end
+  end
+ end
