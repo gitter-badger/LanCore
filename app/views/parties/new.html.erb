@@ -1,0 +1,19 @@
+<br>
+<div class="container">
+  <div class="head-title z-depth-1">New Party</div>
+</div>
+<br>
+
+
+<%= render 'form' %>
+
+<hr>
+<script>
+    $(document).ready(function () {
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15 // Creates a dropdown of 15 years to control year
+        });
+    });
+</script>
+

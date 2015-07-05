@@ -1,0 +1,66 @@
+<%= form_for(@party) do |f| %>
+  <% if @party.errors.any? %>
+    <div id="error_explanation">
+      <div class="container">
+        <div class="card-panel amber darken-3 errorizer">
+          <b><%= pluralize(@party.errors.count, "error") %> prohibited this party from being saved:</b>
+          <ul>
+            <% @party.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <% end %>
+    <div class="container">
+      <div class="row">
+        <div class="col s6">
+          <div class="input-field">
+            <%= f.label :Name %>
+            <%= f.text_field :Name %>
+          </div>
+          <div class="input-field">
+            <%= f.label :Date %>
+            <%= f.text_field :Date, class: 'datepicker' %>
+          </div>
+          <div class="input-field">
+            <%= f.label :Location %>
+            <%= f.text_field :Location %>
+          </div>
+          <div class="input-field">
+            <%= f.label :Password %>
+            <%= f.password_field :Password %>
+          </div>
+          <div class="input-field">
+            <%= f.label :Token %>
+            <%= f.text_field :Token %>
+          </div>
+          <div class="container">
+            <%= recaptcha_tags %>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col s6">
+              <%= link_to "Back", home_path, class: 'waves-effect waves-light btn' %>
+            </div>
+            <div class="col s6">
+              <%= f.button :submit => "", class: 'waves-effect waves-light btn' %>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+            <div class="row">
+              <img style="height:150px; display:block; margin-left:auto; margin-right:auto;" src = <%= path_to_image('logo.png') %> >
+            </div>
+            <br>
+            <div class="row">
+              <h2><i></i></h2>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+
+<% end %>
