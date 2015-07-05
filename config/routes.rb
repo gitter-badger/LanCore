@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :parties
   get 'home' => 'home#index'
   root 'home#index'
   get 'dashboard' => 'dashboard#index'
