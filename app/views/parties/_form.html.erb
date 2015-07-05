@@ -10,31 +10,49 @@
       </ul>
     </div>
   <% end %>
-<div class="container">
-  <div class="input-field">
-    <%= f.label :Name %>
-    <%= f.text_field :Name %>
-  </div>
-  <div class="input-field">
-    <%= f.label :Date %>
-    <%= f.text_field :Date, class: 'datepicker' %>
-  </div>
-  <div class="input-field">
-    <%= f.label :Location %>
-    <%= f.text_field :Location %>
-  </div>
-  <div class="input-field">
-    <%= f.label :Password %>
-    <%= f.text_field :Password %>
-  </div>
-  <div class="input-field">
-    <%= f.label :Token %>
-    <%= f.text_field :Token %>
-  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s6">
+          <div class="input-field">
+            <%= f.label :Name %>
+            <%= f.text_field :Name %>
+          </div>
+          <div class="input-field">
+            <%= f.label :Date %>
+            <%= f.text_field :Date, class: 'datepicker' %>
+          </div>
+          <div class="input-field">
+            <%= f.label :Location %>
+            <%= f.text_field :Location %>
+          </div>
+          <div class="input-field">
+            <%= f.label :Password %>
+            <%= f.text_field :Password %>
+          </div>
+          <div class="input-field">
+            <%= f.label :Token %>
+            <%= f.text_field :Token %>
+          </div>
+          <div class="container">
+            <%= recaptcha_tags %>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col s4 offset-s3">
+              <%= f.button :submit => "", class: 'waves-effect waves-light btn' %>
+            </div>
+            <div class="col s4">
+              <%= link_to "Back", home_path, class: 'waves-effect waves-light btn' %>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+            <div class="row">
+            </div>
+        </div>
+      </div>
 
-    <%= f.button :submit => "", class: 'waves-effect waves-light btn' %>
-
-</div>
+    </div>
 
 
 <% end %>

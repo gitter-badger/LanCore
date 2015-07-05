@@ -44,3 +44,4 @@ gem 'materialize-sass'
 #FontAwesome for awesome
 gem 'font-awesome-sass'
 # gem 'wordnik'
+gem 'recaptcha', :require => 'recaptcha/rails'

@@ -28,7 +28,7 @@ class PartiesController < ApplicationController
     @party = Party.new(party_params)
 
     respond_to do |format|
-      if @party.save
+      if @party.save && verify_recaptcha(:model => @party, :message => "Oh! It's error with reCAPTCHA!")
         format.html { redirect_to @party, notice: 'Party was successfully created.' }
         format.json { render :show, status: :created, location: @party }
       else
