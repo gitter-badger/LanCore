@@ -31,7 +31,10 @@ group :development do
   gem 'guard-coffeescript'
   gem 'guard-sass'
   gem 'guard-livereload'
-  gem "rack-livereload"
+  gem 'rack-livereload'
+  if Gem.win_platform?
+    gem 'wdm', '>= 0.1.0'
+  end
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
