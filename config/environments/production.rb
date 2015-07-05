@@ -30,7 +30,6 @@ Rails.application.configure do
   config.assets.digest = true
 
   # Specifies the header that your server uses for sending files.
-  # TODO Find a way to specify this after picking in the setup process
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
