@@ -1,6 +1,13 @@
 # config/initializers/secret_token.rb
-Rails.application.configure do
-  # config.secret_token = 'existing secret token'
-  config.secret_key_base = '3f25c7efd40723bdf9745182e40e93318b3a37f5ce820f6f048e42809092144ebe5d1331889e453a30ecd7f4ccf7a7ece23da2537ffa9d34f36f6321903
-e2909'
+# Be sure to restart your server when you modify this file.
+
+# Your secret key for verifying the integrity of signed cookies.
+# If you change this key, all old signed cookies will become invalid!
+# Make sure the secret is at least 30 characters and all random,
+# no regular words or you'll be exposed to dictionary attacks.
+
+module LanCore
+  class Application < Rails::Application
+    config.secret_token = (Rails.env.development? or Rails.env.test?) ? ('x' * 30) : ENV['SECRET_TOKEN']
+  end
 end

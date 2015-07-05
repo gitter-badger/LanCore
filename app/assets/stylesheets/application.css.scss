@@ -28,16 +28,23 @@
 @import "materialize/components/date_picker/default.date.scss";
 @import "materialize/components/date_picker/default.time.scss";
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "home";
 
-.icon-block {
-  padding: 0 15px;
+.sidenav-header {
+  height: 95px !important;
+  margin-top: 10px;
 }
 
-.icon-block .material-icons {
-  font-size: inherit;
+.desktop-navbar-logo {
+  max-height: 50px;
+  width: auto;
+  margin-top: 10px;
 }
-nav {
-  .nav-wrapper {
-    margin-left: 10px;
-  }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }

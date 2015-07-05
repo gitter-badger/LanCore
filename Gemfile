@@ -26,7 +26,20 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 end
 
+group :development do
+  gem 'guard'
+  gem 'guard-coffeescript'
+  gem 'guard-sass'
+  gem 'guard-livereload'
+  gem 'rack-livereload'
+  if Gem.win_platform?
+    gem 'wdm', '>= 0.1.0'
+  end
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # MaterializeCSS for front-end framework
 gem 'materialize-sass'
+#FontAwesome for awesome
+gem 'font-awesome-sass'
