@@ -44,16 +44,16 @@
       <a href="#" class="brand-logo center hide-on-med-and-down"><img class="desktop-navbar-logo" src="<%= path_to_image('logo.png') %>"></a>
       <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
-        <li><a href="#">Features</a></li>
-        <li><a href="#">About</a></li>
+        <li><%= link_to "Features", features_path %></li>
+        <li><%= link_to "About", about_path %></li>
       </ul>
     </div>
     <ul class="side-nav" id="mobile">
       <li>
         <a href="<%= root_path %>" class="center sidenav-header"><img class="responsive-img" src="<%= path_to_image('logo.png') %>"></a>
       </li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">About</a></li>
+      <li><%= link_to "Features", features_path %></li>
+      <li><%= link_to "About", about_path %></li>
     </ul>
   </div>
 </nav>
